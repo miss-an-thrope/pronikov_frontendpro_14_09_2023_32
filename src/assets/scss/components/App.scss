@@ -1,0 +1,13 @@
+.container {
+    min-height: 100vh;
+    display: grid;
+    border: 1px solid black;
+    max-width: 1500px;
+    margin: 0 auto;
+    
+
+    grid-template: // minmax(100px, auto) 1fr minmax(100px, auto) / 1fr;
+        [start] "header header" minmax(100px, auto) [row2]
+        [row2] "aside main" 1fr [row3]
+        [row3] "footer footer" minmax(100px, auto) / 300px 1fr;
+}

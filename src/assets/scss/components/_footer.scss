@@ -1,0 +1,9 @@
+.footer {
+    display: grid;
+    // background-color: blue;
+    border: 1px solid black;
+    grid-template-columns: repeat(4, 1fr);
+    grid-area: 'footer';
+    grid-column: 1 / 3;
+
+}
